@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+		<item name="android:windowActionBar">false</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:fontFamily">@font/montserrat</item>
+		<item name="android:textColor">@color/IuWhiteColor</item>
+    </style>
+
+	<style name="ImageButton" parent="android:style/Widget.ImageButton">
+		<item name="android:background">@drawable/Button_Background</item>
+	</style>
+	<style name="PlaylistSpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+		<item name="android:textColor">@color/IuWhiteColor</item>
+	</style>
+	<style name="IuAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+		<item name="android:textColor">@android:color/white</item>
+		<item name="android:textColorPrimary">@android:color/white</item>
+		<item name="android:windowBackground">@color/IuBlueColor</item>
+	</style>
+
+</resources>

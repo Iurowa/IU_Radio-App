@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="IuGreyColor">#686767</color>
+		<color name="IuLightGreyColor">#DEDEDE</color>
+	    <color name="IuFontColor">@color/IuWhiteColor</color>
+	    <color name="IuWhiteColor">#FFFFFF</color>
+		<color name="IuBlueColor">#216477</color>
+		<color name="IuTransparentWhite">#80FFFFFF</color>
+		<color name="IuHighlightColor">#E2B007</color>
+</resources>
