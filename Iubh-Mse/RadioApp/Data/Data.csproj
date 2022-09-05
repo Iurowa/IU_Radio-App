@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--/-:cnd -->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Iubh.RadioApp.Data</AssemblyName>
+    <RootNamespace>Iubh.RadioApp.Data</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
+    <PackageReference Include="FirebaseDatabase.net" Version="4.0.7" />
+    <PackageReference Include="MvvmCross" Version="6.4.2" />
+    <PackageReference Include="System.ObjectModel" Version="4.3.0" />
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+    <PackageReference Include="System.Threading.Tasks" Version="4.3.0" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+    <PackageReference Include="MvvmCross.Plugin.File" Version="6.4.2" />
+    <PackageReference Include="sqlite" Version="3.13.0" />
+    <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
+  </ItemGroup>
+    
+  <ItemGroup>
+    <Compile Remove="Options\OnboardingOption.cs" />
+    <Compile Remove="Source\StaticHistories.cs" />
+    <Compile Remove="Source\DataSource.cs" />
+    <Compile Remove="ViewModels\AddListenViewModel.cs" />
+    <Compile Remove="ViewModels\SearchTableViewModel.cs" />
+    <Compile Remove="ViewModels\HistoryDetailViewModel.cs" />
+    <Compile Remove="ViewModels\TabsRootViewModel.cs" />
+    <Compile Remove="ViewModels\ListenViewModel.cs" />
+    <Compile Remove="ViewModels\PageViewModel.cs" />
+    <Compile Remove="ViewModels\OnboardingViewModel.cs" />
+    <Compile Remove="ViewModels\HistoryImageTeaserViewModel.cs" />
+    <Compile Remove="ViewModels\ProfileViewModel.cs" />
+    <Compile Remove="ViewModels\ServiceTableViewModel.cs" />
+    <Compile Remove="ViewModels\HistoryEditViewModel.cs" />
+    <Compile Remove="ViewModels\FirstViewModel.cs" />
+    <Compile Remove="ViewModels\ProfileEditViewModel.cs" />
+    <Compile Remove="ViewModels\HistoryTextTeaserViewModel.cs" />
+    <Compile Remove="ViewModels\ImageViewModel.cs" />
+    <Compile Remove="ViewModels\HistoryAllViewModel.cs" />
+    <Compile Remove="ViewModels\ServiceViewModel.cs" />
+    <Compile Remove="ViewModels\TabBarViewModel.cs" />
+    <Compile Remove="ViewModels\RateViewModel.cs" />
+    <Compile Remove="ViewModels\BaseViewModel.cs" />
+    <Compile Remove="ViewModels\ProfileDetailViewModel.cs" />
+    <Compile Remove="ViewModels\MainViewModel.cs" />
+    <Compile Remove="App.cs" />
+    <Compile Remove="Source\StaticProfiles.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\..\Library\Frameworks\Xamarin.iOS.framework\Versions\13.2.0.42\lib\mono\Xamarin.iOS\mscorlib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Database\Commands\" />
+    <Folder Include="Database\Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Database\Scripts\InitScripts.InitSchema.sql" />
+    <None Remove="Database\Scripts\InitScripts %28copy%29.InitSchema.sql" />
+    <None Remove="Database\Scripts\UpdateScripts.1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Database\Scripts\InitScripts.InitSchema.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+  </ItemGroup>
+</Project>
