@@ -1,0 +1,1 @@
+﻿using System;namespace Iubh.RadioApp.Data.Database{    public interface ISqlQuery : ISqlCommand    {    }    public interface ISqlQuery<T> : ISqlQuery    {    }}

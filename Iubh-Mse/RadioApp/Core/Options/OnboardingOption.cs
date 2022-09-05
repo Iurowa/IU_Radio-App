@@ -1,0 +1,1 @@
+﻿namespace Iubh.RadioApp.Core.Options{    public enum OnboardingOption    {        Welcome,        Listen,        Wish,        Service,        Rate,        Moderator    }}

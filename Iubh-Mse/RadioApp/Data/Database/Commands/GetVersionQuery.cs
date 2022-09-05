@@ -1,0 +1,1 @@
+﻿using System;namespace Iubh.RadioApp.Data.Database.Commands{    public class GetVersionQuery : ISqlQuery<Models.Version>    {        public string GetCommand()        {            return "SELECT * FROM [Version] ORDER BY Nr DESC LIMIT 1";        }        public object[] GetParams()        {            return null;        }    }}
