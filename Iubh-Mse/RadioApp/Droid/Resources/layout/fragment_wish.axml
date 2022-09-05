@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Iubh.RadioApp.Droid.views.headerview
+        android:id="@+id/Wish_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+     <ScrollView
+        android:id="@+id/Wish_ScrollView"
+        android:layout_below="@id/Wish_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:paddingTop="20dp"
+        android:overScrollMode="always">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Name:"/>
+                <EditText
+                    android:id="@+id/Wish_Name"
+                    android:background="@drawable/edittext_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp" 
+                    android:paddingRight="5dp"
+                    android:gravity="top"
+                    android:textSize="14sp"/>
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Musikwunsch (Interpret/Titel/Grüße): *"/>
+                <EditText
+                    android:id="@+id/Wish_MusicWish"
+                    android:background="@drawable/edittext_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp" 
+                    android:paddingRight="5dp"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp"/>
+                <Button
+                    android:id="@+id/Wish_SendButton"
+                    android:background="@drawable/round_corner_button"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:text="senden"
+                    android:textAllCaps="false"  />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                     android:layout_marginTop="20dp"
+                    android:textSize="12sp"
+                    android:text="* Pflichtfeld"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

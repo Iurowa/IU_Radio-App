@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Iubh.RadioApp.Droid.views.headerview
+        android:id="@+id/Wishlist_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout
+         android:id="@+id/Wishlist_RecyclerViewRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Wishlist_Header">
+        <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+          android:id="@+id/Wishlist_RecyclerView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:overScrollMode="never"
+          android:layout_margin="20dp" />
+    </MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout>
+    <TextView
+        android:id="@+id/Wishlist_EmtpyItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:text="Es sind keine Daten verfügbar."
+        android:layout_below="@id/Wishlist_Header"/>
+    <RelativeLayout
+        android:id="@+id/Wishlist_Loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Wishlist_Header"
+        android:background="@color/IuTransparentWhite">
+        <ProgressBar
+            android:id="@+id/Wishlist_ProgressBar"  
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:indeterminateTint="@color/IuBlueColor"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

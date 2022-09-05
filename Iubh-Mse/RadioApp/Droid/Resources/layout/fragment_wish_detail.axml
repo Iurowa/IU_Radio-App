@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Iubh.RadioApp.Droid.views.headerview
+        android:id="@+id/Wish_Detail_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+     <ScrollView
+        android:id="@+id/Wish_Detail_ScrollView"
+        android:layout_below="@id/Wish_Detail_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:paddingTop="20dp"
+        android:overScrollMode="always">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Name"/>
+                <TextView
+                    android:id="@+id/Wish_Detail_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp" 
+                    android:paddingRight="5dp"
+                    android:gravity="top"
+                    android:textSize="14sp"/>
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Musikwunsch (Interpret/Titel/Grüße):"/>
+                <TextView
+                    android:id="@+id/Wish_Detail_MusicWish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp" 
+                    android:paddingRight="5dp"
+                    android:gravity="top"
+                    android:textSize="14sp"/>
+                <Button
+                    android:id="@+id/Wish_Detail_SendButton"
+                    android:background="@drawable/round_corner_button"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:text="erledigt"
+                    android:textAllCaps="false"  />
+                
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

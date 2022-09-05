@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:local="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:background="@color/IuWhiteColor">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="40dp"
+         android:orientation="vertical">
+        <Iubh.RadioApp.Droid.views.iuviewpager
+            android:id="@+id/Onboarding_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            local:MvxItemTemplate="@layout/cell_onboarding"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:orientation="vertical"
+        android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+          <Iubh.RadioApp.Droid.Views.IuPageControl
+              android:id="@+id/Onboarding_pagecontrol"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:orientation="vertical"
+        android:gravity="bottom">            
+            <Button
+              android:id="@+id/Onboarding_close"
+              android:layout_width="match_parent"
+              android:layout_height="70dp"
+              android:layout_below="@id/Onboarding_pagecontrol"
+              android:layout_centerHorizontal="true"
+              android:background="@color/IuBlueColor"
+            android:textColor="@color/IuWhiteColor"
+               style="?android:attr/borderlessButtonStyle"
+              android:text="überspringen"/>
+    </LinearLayout>
+
+ 
+</LinearLayout>
