@@ -1,1 +1,0 @@
-﻿namespace Iubh.RadioApp.Core.Options{    public enum ServiceOption    {        External,        Onboarding,        Alert,        Choice,        View,        Mail,        Share    }}
