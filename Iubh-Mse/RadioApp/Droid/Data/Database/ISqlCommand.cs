@@ -1,0 +1,1 @@
+﻿using System;namespace Iubh.RadioApp.Data.Database{    public interface ISqlCommand    {        string GetCommand();        object[] GetParams();    }}
